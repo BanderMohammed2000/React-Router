@@ -1,5 +1,5 @@
 // عبارة عن كائن يحتوي على كل جزء من المسار الديناميكي
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 function ProductDetailPage() {
   const params = useParams();
   return (
@@ -9,6 +9,11 @@ function ProductDetailPage() {
       {/* راح يتم اظهار المسار الديناميكي */}
       {/* طبعاً مفيد لجلب البيانات من قاعدة البيانات عن طريق معرف المسار */}
       <p>{params.productId}</p>
+      <p>
+        <Link to=".." relative="path">
+          Back
+        </Link>
+      </p>
     </>
   );
 }

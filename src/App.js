@@ -26,7 +26,8 @@ const router = createBrowserRouter([
     element: <RootLayout />,
     errorElement: <ErrorPage />,
     children: [
-      { path: "/", element: <HomePage /> },
+      // index: فائدته اذا كان مسار الاب نشط سيتم عرض محتوى هذا النشاط ايضاً
+      { index: true, element: <HomePage /> },
       { path: "/products", element: <ProductsPage /> },
       { path: "/products/:productId", element: <ProductDetailPage /> },
     ],

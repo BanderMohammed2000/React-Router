@@ -12,8 +12,11 @@ function ProductsPage() {
       <ul>
         {PRODUCTS.map((prod) => (
           <li key={prod.id}>
-            {/* يجب وضع السلاش / في البداية !! */}
+            {/* يجب وضع السلاش / في البداية, اذا اردنا كتابة مسار مطلق */}
             <Link to={`/products/${prod.id}`}>{prod.title}</Link>
+
+            {/* هذا مسار نسبي */}
+            {/* <Link to={prod.id}>{prod.title}</Link> */}
           </li>
         ))}
       </ul>
