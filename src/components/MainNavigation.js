@@ -1,3 +1,5 @@
+// import { Link } from "react-router-dom";
+// نفس Link لكن فيه مميزات اضافية
 import { NavLink } from "react-router-dom";
 
 import classes from "./MainNavigation.module.css";
